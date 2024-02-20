@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddIcon from '@mui/icons-material/Add';
 
 function CreateArea(props) {
   const [note, setNote] = useState({
@@ -38,7 +39,7 @@ function CreateArea(props) {
               title: "",
               content: "",
             });
-          }}>Add</button>
+          }}><AddIcon /></button>
       </form>
     </div>
   );

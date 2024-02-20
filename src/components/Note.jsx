@@ -1,4 +1,5 @@
 import React from "react";
+import PetsOutlinedIcon from '@mui/icons-material/PetsOutlined';
 
 function Note(props) {
   return (
@@ -7,7 +8,9 @@ function Note(props) {
       <p>{props.content}</p>
       <button onClick={
         () => props.deletenote(props.id)
-      }>DELETE</button>
+      }>
+        <PetsOutlinedIcon />
+      </button>
     </div>
   );
 }
